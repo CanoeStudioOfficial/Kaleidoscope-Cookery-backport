@@ -4,7 +4,8 @@
     "particle": "kaleidoscopecookery:block/pot_side",
     "side": "kaleidoscopecookery:block/pot_side",
     "bottom": "kaleidoscopecookery:block/pot_side",
-    "top": "kaleidoscopecookery:block/pot_top"
+    "top": "kaleidoscopecookery:block/pot_top",
+    "oil": "kaleidoscopecookery:block/pot_oil"
   },
   "elements": [
     {
@@ -17,6 +18,13 @@
         "south": {"uv": [2, 12, 14, 16], "texture": "#side"},
         "west": {"uv": [2, 12, 14, 16], "texture": "#side"},
         "east": {"uv": [2, 12, 14, 16], "texture": "#side"}
+      }
+    },
+    {
+      "from": [3, 4, 3],
+      "to": [13, 5, 13],
+      "faces": {
+        "up": {"uv": [3, 3, 13, 13], "texture": "#oil"}
       }
     }
   ]

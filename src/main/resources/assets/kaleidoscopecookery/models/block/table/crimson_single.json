@@ -1,6 +1,6 @@
 {
-  "parent": "kaleidoscopecookery:blocks/table/single",
+  "parent": "kaleidoscopecookery:block/table/single",
   "textures": {
-    "particle": "kaleidoscopecookery:blocks/table/crimson"
+    "particle": "kaleidoscopecookery:block/table/crimson"
   }
 }

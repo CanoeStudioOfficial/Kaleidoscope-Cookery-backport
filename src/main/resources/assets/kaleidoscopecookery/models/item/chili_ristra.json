@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscopecookery:blocks/chili_ristra/head"
+    "layer0": "kaleidoscopecookery:block/chili_ristra/head"
   }
 }

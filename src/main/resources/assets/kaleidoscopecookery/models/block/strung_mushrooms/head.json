@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:blocks/cross",
+  "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "kaleidoscopecookery:blocks/strung_mushrooms/head"
+    "cross": "kaleidoscopecookery:block/strung_mushrooms/head"
   }
 }

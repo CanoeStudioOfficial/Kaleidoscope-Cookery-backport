@@ -1,7 +1,7 @@
 {
-  "parent": "kaleidoscopecookery:blocks/cross",
+  "parent": "kaleidoscopecookery:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "kaleidoscopecookery:blocks/crop/lettuce/stage7"
+    "cross": "kaleidoscopecookery:block/crop/lettuce/stage7"
   }
 }

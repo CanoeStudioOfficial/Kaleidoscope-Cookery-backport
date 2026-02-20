@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscopecookery:blocks/strung_mushrooms/head"
+    "layer0": "kaleidoscopecookery:block/strung_mushrooms/head"
   }
 }

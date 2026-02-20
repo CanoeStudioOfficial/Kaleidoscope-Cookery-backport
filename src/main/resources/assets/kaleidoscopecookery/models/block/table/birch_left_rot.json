@@ -1,6 +1,6 @@
 {
-  "parent": "kaleidoscopecookery:blocks/table/left_rot",
+  "parent": "kaleidoscopecookery:block/table/left_rot",
   "textures": {
-    "particle": "kaleidoscopecookery:blocks/table/birch"
+    "particle": "kaleidoscopecookery:block/table/birch"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "parent": "kaleidoscopecookery:blocks/carpet/table/middle",
+  "parent": "kaleidoscopecookery:block/carpet/table/middle",
   "textures": {
-    "particle": "kaleidoscopecookery:blocks/carpet/table/white"
+    "particle": "kaleidoscopecookery:block/carpet/table/white"
   }
 }
