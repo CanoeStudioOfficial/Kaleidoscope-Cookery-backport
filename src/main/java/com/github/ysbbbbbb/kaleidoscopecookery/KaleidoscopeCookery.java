@@ -10,11 +10,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = KaleidoscopeCookery.MOD_ID, name = KaleidoscopeCookery.MOD_NAME, version = KaleidoscopeCookery.VERSION)
+@Mod(modid = Tags.MOD_ID, name = Tags.MOD_NAME, version = Tags.VERSION)
 public class KaleidoscopeCookery {
-    public static final String MOD_ID = "kaleidoscope_cookery";
-    public static final String MOD_NAME = "Kaleidoscope Cookery";
-    public static final String VERSION = "1.0.0";
+    public static final String MOD_ID = Tags.MOD_ID;
+    public static final String MOD_NAME = Tags.MOD_NAME;
     public static final Logger LOGGER = LogManager.getLogger(MOD_NAME);
 
     @Mod.Instance(MOD_ID)
