@@ -1,0 +1,6 @@
+{
+  "parent": "kaleidoscope_cookery:blocks/table/right",
+  "textures": {
+    "particle": "kaleidoscope_cookery:blocks/table/mangrove"
+  }
+}

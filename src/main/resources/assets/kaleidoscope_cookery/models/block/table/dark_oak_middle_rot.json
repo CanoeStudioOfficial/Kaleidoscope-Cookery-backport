@@ -1,0 +1,6 @@
+{
+  "parent": "kaleidoscope_cookery:blocks/table/middle_rot",
+  "textures": {
+    "particle": "kaleidoscope_cookery:blocks/table/dark_oak"
+  }
+}

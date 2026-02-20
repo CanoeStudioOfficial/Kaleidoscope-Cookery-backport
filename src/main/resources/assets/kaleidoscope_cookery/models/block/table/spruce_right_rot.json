@@ -1,0 +1,6 @@
+{
+  "parent": "kaleidoscope_cookery:blocks/table/right_rot",
+  "textures": {
+    "particle": "kaleidoscope_cookery:blocks/table/spruce"
+  }
+}

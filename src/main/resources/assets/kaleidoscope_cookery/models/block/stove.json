@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:blocks/cube",
+  "textures": {
+    "down": "kaleidoscope_cookery:blocks/stove_top",
+    "east": "kaleidoscope_cookery:blocks/stove_side",
+    "north": "kaleidoscope_cookery:blocks/stove_front",
+    "particle": "kaleidoscope_cookery:blocks/stove_side",
+    "south": "kaleidoscope_cookery:blocks/stove_side",
+    "up": "kaleidoscope_cookery:blocks/stove_top",
+    "west": "kaleidoscope_cookery:blocks/stove_side"
+  }
+}

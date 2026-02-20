@@ -1,0 +1,6 @@
+{
+  "parent": "kaleidoscope_cookery:blocks/table/middle",
+  "textures": {
+    "particle": "kaleidoscope_cookery:blocks/table/bamboo"
+  }
+}

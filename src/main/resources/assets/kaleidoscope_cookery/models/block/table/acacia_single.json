@@ -1,0 +1,6 @@
+{
+  "parent": "kaleidoscope_cookery:blocks/table/single",
+  "textures": {
+    "particle": "kaleidoscope_cookery:blocks/table/acacia"
+  }
+}

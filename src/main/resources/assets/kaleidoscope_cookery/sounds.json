@@ -1,0 +1,120 @@
+{
+  "block.millstone": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_0",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_1",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_2",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_3",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_4",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/millstone/millstone_5",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.block.millstone"
+  },
+  "block.paddy": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:block/paddy/paddy_0",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/paddy/paddy_1",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.block.paddy"
+  },
+  "block.recipe_block": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:block/recipe_block/recipe_block_0",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/recipe_block/recipe_block_1",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/recipe_block/recipe_block_2",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.block.recipe_block"
+  },
+  "block.stockpot": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_0",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_1",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_2",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_3",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_4",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_5",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:block/stockpot/stockpot_6",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.block.stockpot"
+  },
+  "entity.fart": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:entity/fart/fart_0",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:entity/fart/fart_1",
+        "stream": false
+      },
+      {
+        "name": "kaleidoscope_cookery:entity/fart/fart_2",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.entity.fart"
+  },
+  "item.dough_transform": {
+    "sounds": [
+      {
+        "name": "kaleidoscope_cookery:item/dough_transform",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kaleidoscope_cookery.item.dough_transform"
+  }
+}
