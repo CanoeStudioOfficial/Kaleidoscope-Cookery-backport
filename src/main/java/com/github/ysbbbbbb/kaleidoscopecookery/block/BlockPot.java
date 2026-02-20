@@ -84,7 +84,7 @@ public class BlockPot extends BlockHorizontal {
         
         if (!pot.hasHeatSource(world)) {
             if (!world.isRemote) {
-                player.sendStatusMessage(new TextComponentTranslation("tip.kaleidoscope_cookery.pot.need_lit_stove"), true);
+                player.sendStatusMessage(new TextComponentTranslation("tip.kaleidoscopecookery.pot.need_lit_stove"), true);
             }
             return true;
         }
@@ -97,7 +97,7 @@ public class BlockPot extends BlockHorizontal {
                 return true;
             }
             if (!world.isRemote) {
-                player.sendStatusMessage(new TextComponentTranslation("tip.kaleidoscope_cookery.pot.need_oil"), true);
+                player.sendStatusMessage(new TextComponentTranslation("tip.kaleidoscopecookery.pot.need_oil"), true);
             }
             return true;
         }
@@ -154,6 +154,6 @@ public class BlockPot extends BlockHorizontal {
 
     @Override
     public void addInformation(ItemStack stack, World player, List<String> tooltip, net.minecraft.client.util.ITooltipFlag advanced) {
-        tooltip.add(net.minecraft.client.resources.I18n.format("tooltip.kaleidoscope_cookery.pot"));
+        tooltip.add(net.minecraft.client.resources.I18n.format("tooltip.kaleidoscopecookery.pot"));
     }
 }

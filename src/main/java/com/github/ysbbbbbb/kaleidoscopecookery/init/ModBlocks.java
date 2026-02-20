@@ -56,7 +56,7 @@ public class ModBlocks {
 
     private static Block registerBlock(Block block, String name) {
         block.setRegistryName(KaleidoscopeCookery.MOD_ID, name);
-        block.setUnlocalizedName(KaleidoscopeCookery.MOD_ID + "." + name);
+        block.setTranslationKey(KaleidoscopeCookery.MOD_ID + "." + name);
         block.setCreativeTab(CREATIVE_TAB);
         ForgeRegistries.BLOCKS.register(block);
         return block;

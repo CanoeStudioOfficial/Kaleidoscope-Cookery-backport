@@ -66,7 +66,7 @@ public class EntitySit extends Entity {
     }
 
     @Override
-    public Vec3d getDismountPosition(EntityPlayer player) {
+    public Vec3d getLook(float partialTicks) {
         return new Vec3d(this.posX, this.posY, this.posZ);
     }
 }

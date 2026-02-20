@@ -39,7 +39,7 @@ public class BlockCropBase extends BlockCrops {
 
     public BlockCropBase(String name, Item cropItem, Item seedItem) {
         this.setRegistryName(KaleidoscopeCookery.MOD_ID, name);
-        this.setUnlocalizedName(KaleidoscopeCookery.MOD_ID + "." + name);
+        this.setTranslationKey(KaleidoscopeCookery.MOD_ID + "." + name);
         this.cropItem = cropItem;
         this.seedItem = seedItem;
     }
@@ -71,7 +71,7 @@ public class BlockCropBase extends BlockCrops {
             if (!world.isRemote) {
                 spawnAsEntity(world, pos, new ItemStack(this.cropItem));
                 world.setBlockState(pos, this.withAge(5));
-                world.playSound(null, pos, SoundEvents.BLOCK_CROP_BREAK, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                world.playSound(null, pos, SoundEvents.BLOCK_GRASS_BREAK, SoundCategory.BLOCKS, 1.0F, 1.0F);
             }
             return true;
         }
@@ -81,6 +81,6 @@ public class BlockCropBase extends BlockCrops {
 
     @Override
     public void addInformation(ItemStack stack, World player, List<String> tooltip, net.minecraft.client.util.ITooltipFlag advanced) {
-        tooltip.add(TextFormatting.GRAY + I18n.format("tooltip.kaleidoscope_cookery.crop_seed"));
+        tooltip.add(TextFormatting.GRAY + I18n.format("tooltip.kaleidoscopecookery.crop_seed"));
     }
 }

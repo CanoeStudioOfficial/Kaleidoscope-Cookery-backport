@@ -122,9 +122,9 @@ public class BlockStove extends Block {
             EnumFacing direction = state.getValue(FACING);
             EnumFacing.Axis axis = direction.getAxis();
             double offsetRandom = rand.nextDouble() * 0.6 - 0.3;
-            double xOffset = axis == EnumFacing.Axis.X ? (double) direction.getFrontOffsetX() * 0.52 : offsetRandom;
+            double xOffset = axis == EnumFacing.Axis.X ? (double) direction.getXOffset() * 0.52 : offsetRandom;
             double yOffset = 0.25 + rand.nextDouble() * 6.0 / 16.0;
-            double zOffset = axis == EnumFacing.Axis.Z ? (double) direction.getFrontOffsetZ() * 0.52 : offsetRandom;
+            double zOffset = axis == EnumFacing.Axis.Z ? (double) direction.getZOffset() * 0.52 : offsetRandom;
             
             world.spawnParticle(EnumParticleTypes.FLAME,
                     x + xOffset,

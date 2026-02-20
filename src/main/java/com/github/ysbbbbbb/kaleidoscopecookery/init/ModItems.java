@@ -132,7 +132,7 @@ public class ModItems {
     private static Item registerItemBlock(Block block) {
         if (block == null) return null;
         Item item = new ItemBlock(block).setRegistryName(block.getRegistryName());
-        item.setUnlocalizedName(block.getUnlocalizedName());
+        item.setTranslationKey(block.getTranslationKey());
         item.setCreativeTab(ModBlocks.CREATIVE_TAB);
         ForgeRegistries.ITEMS.register(item);
         return item;
@@ -140,7 +140,7 @@ public class ModItems {
 
     private static Item registerItem(Item item, String name) {
         item.setRegistryName(KaleidoscopeCookery.MOD_ID, name);
-        item.setUnlocalizedName(KaleidoscopeCookery.MOD_ID + "." + name);
+        item.setTranslationKey(KaleidoscopeCookery.MOD_ID + "." + name);
         item.setCreativeTab(ModBlocks.CREATIVE_TAB);
         ForgeRegistries.ITEMS.register(item);
         return item;
