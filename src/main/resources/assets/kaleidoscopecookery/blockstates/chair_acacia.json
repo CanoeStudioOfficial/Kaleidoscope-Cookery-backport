@@ -1,63 +1,63 @@
 {
   "variants": {
     "facing=east,has_carpet=false,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 90
     },
     "facing=east,has_carpet=false,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 90
     },
     "facing=east,has_carpet=true,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 90
     },
     "facing=east,has_carpet=true,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 90
     },
     "facing=north,has_carpet=false,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia"
+      "model": "kaleidoscopecookery:block/chair/acacia"
     },
     "facing=north,has_carpet=false,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia"
+      "model": "kaleidoscopecookery:block/chair/acacia"
     },
     "facing=north,has_carpet=true,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia"
+      "model": "kaleidoscopecookery:block/chair/acacia"
     },
     "facing=north,has_carpet=true,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia"
+      "model": "kaleidoscopecookery:block/chair/acacia"
     },
     "facing=south,has_carpet=false,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 180
     },
     "facing=south,has_carpet=false,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 180
     },
     "facing=south,has_carpet=true,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 180
     },
     "facing=south,has_carpet=true,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 180
     },
     "facing=west,has_carpet=false,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 270
     },
     "facing=west,has_carpet=false,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 270
     },
     "facing=west,has_carpet=true,waterlogged=false": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 270
     },
     "facing=west,has_carpet=true,waterlogged=true": {
-      "model": "kaleidoscopecookery:chair/acacia",
+      "model": "kaleidoscopecookery:block/chair/acacia",
       "y": 270
     }
   }

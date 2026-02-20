@@ -1,0 +1,70 @@
+tile.stove.name=Stove
+tile.pot.name=Pot
+tile.stockpot.name=Stockpot
+tile.chopping_board.name=Chopping Board
+tile.enamel_basin.name=Enamel Basin
+tile.kitchenware_racks.name=Kitchenware Racks
+tile.millstone.name=Millstone
+tile.steamer.name=Steamer
+tile.shawarma_spit.name=Shawarma Spit
+tile.oil_pot.name=Oil Pot
+tile.oil_block.name=Oil Block
+tile.recipe_block.name=Recipe Block
+tile.fruit_basket.name=Fruit Basket
+tile.chili_ristra.name=Chili Ristra
+tile.straw_block.name=Straw Block
+
+tile.tomato_crop.name=Tomato Crop
+tile.chili_crop.name=Chili Crop
+tile.lettuce_crop.name=Lettuce Crop
+tile.rice_crop.name=Rice Crop
+
+item.tomato.name=Tomato
+item.tomato_seed.name=Tomato Seed
+item.red_chili.name=Red Chili
+item.chili_seed.name=Chili Seed
+item.green_chili.name=Green Chili
+item.lettuce.name=Lettuce
+item.lettuce_seed.name=Lettuce Seed
+item.rice.name=Rice
+item.wild_rice.name=Wild Rice
+item.rice_panicle.name=Rice Panicle
+item.caterpillar.name=Caterpillar
+
+item.flour.name=Flour
+item.raw_dough.name=Raw Dough
+item.raw_noodles.name=Raw Noodles
+
+item.fried_egg.name=Fried Egg
+item.donkey_burger.name=Donkey Burger
+item.baozi.name=Baozi
+item.dumpling.name=Dumpling
+item.samsa.name=Samsa
+item.mantou.name=Mantou
+item.meat_pie.name=Meat Pie
+
+item.cooked_rice.name=Cooked Rice
+item.beef_noodle.name=Beef Noodle
+item.hui_noodle.name=Hui Noodle
+item.udon_noodle.name=Udon Noodle
+
+item.sashimi.name=Sashimi
+item.raw_lamb_chops.name=Raw Lamb Chops
+item.raw_cow_offal.name=Raw Cow Offal
+item.raw_pork_belly.name=Raw Pork Belly
+item.raw_donkey_meat.name=Raw Donkey Meat
+item.raw_cut_small_meats.name=Raw Cut Small Meats
+item.raw_meatball.name=Raw Meatball
+
+item.honey.name=Honey
+item.egg.name=Egg
+
+item.sickle.name=Sickle
+item.kitchen_shovel.name=Kitchen Shovel
+
+itemGroup.kaleidoscopecookery=Kaleidoscope Cookery
+
+tooltip.kaleidoscopecookery.pot=Place it on a lit stove to cook
+tooltip.kaleidoscopecookery.crop_seed=Right-click to harvest when mature
+tip.kaleidoscopecookery.pot.need_lit_stove=Need a lit stove below
+tip.kaleidoscopecookery.pot.need_oil=Need oil to cook

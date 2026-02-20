@@ -1,16 +1,16 @@
 {
   "variants": {
     "is_head=false,sheared=false": {
-      "model": "kaleidoscopecookery:strung_mushrooms/body"
+      "model": "kaleidoscopecookery:block/strung_mushrooms/body"
     },
     "is_head=false,sheared=true": {
-      "model": "kaleidoscopecookery:strung_mushrooms/body_sheared"
+      "model": "kaleidoscopecookery:block/strung_mushrooms/body_sheared"
     },
     "is_head=true,sheared=false": {
-      "model": "kaleidoscopecookery:strung_mushrooms/head"
+      "model": "kaleidoscopecookery:block/strung_mushrooms/head"
     },
     "is_head=true,sheared=true": {
-      "model": "kaleidoscopecookery:strung_mushrooms/head_sheared"
+      "model": "kaleidoscopecookery:block/strung_mushrooms/head_sheared"
     }
   }
 }

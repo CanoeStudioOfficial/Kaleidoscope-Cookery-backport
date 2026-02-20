@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "kaleidoscopecookery:oil_block"
+      "model": "kaleidoscopecookery:block/block/oil_block"
     }
   }
 }
