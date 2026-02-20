@@ -1,6 +1,6 @@
 {
   "base": {
-    "parent": "kaleidoscope_cookery:item/cold_cut_ham_slices_block"
+    "parent": "kaleidoscopecookery:item/cold_cut_ham_slices_block"
   },
   "gui_light": "front",
   "loader": "forge:separate_transforms",
@@ -8,13 +8,13 @@
     "fixed": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "kaleidoscope_cookery:item/cold_cut_ham_slices_gui"
+        "layer0": "kaleidoscopecookery:item/cold_cut_ham_slices_gui"
       }
     },
     "gui": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "kaleidoscope_cookery:item/cold_cut_ham_slices_gui"
+        "layer0": "kaleidoscopecookery:item/cold_cut_ham_slices_gui"
       }
     }
   }

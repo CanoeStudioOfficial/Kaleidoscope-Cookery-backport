@@ -1,6 +1,6 @@
 {
-  "parent": "kaleidoscope_cookery:blocks/table/middle_rot",
+  "parent": "kaleidoscopecookery:blocks/table/middle_rot",
   "textures": {
-    "particle": "kaleidoscope_cookery:blocks/table/mangrove"
+    "particle": "kaleidoscopecookery:blocks/table/mangrove"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/cold_roasted_meat"
+    "layer0": "kaleidoscopecookery:item/cold_roasted_meat"
   }
 }

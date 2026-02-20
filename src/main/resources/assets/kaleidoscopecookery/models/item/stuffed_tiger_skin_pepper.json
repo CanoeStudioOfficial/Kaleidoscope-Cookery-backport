@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/stuffed_tiger_skin_pepper"
+    "layer0": "kaleidoscopecookery:item/stuffed_tiger_skin_pepper"
   }
 }

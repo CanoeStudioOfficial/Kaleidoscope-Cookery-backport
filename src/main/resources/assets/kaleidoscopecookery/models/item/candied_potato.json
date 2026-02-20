@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/candied_potato"
+    "layer0": "kaleidoscopecookery:item/candied_potato"
   }
 }

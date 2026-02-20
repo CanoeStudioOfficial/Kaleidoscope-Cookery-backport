@@ -1,100 +1,100 @@
 {
   "variants": {
     "axis=x,has_carpet=false,position=0,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=x,has_carpet=false,position=0,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=x,has_carpet=false,position=1,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_right"
+      "model": "kaleidoscopecookery:table/warped_right"
     },
     "axis=x,has_carpet=false,position=1,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_right"
+      "model": "kaleidoscopecookery:table/warped_right"
     },
     "axis=x,has_carpet=false,position=2,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_middle"
+      "model": "kaleidoscopecookery:table/warped_middle"
     },
     "axis=x,has_carpet=false,position=2,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_middle"
+      "model": "kaleidoscopecookery:table/warped_middle"
     },
     "axis=x,has_carpet=false,position=3,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_left"
+      "model": "kaleidoscopecookery:table/warped_left"
     },
     "axis=x,has_carpet=false,position=3,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_left"
+      "model": "kaleidoscopecookery:table/warped_left"
     },
     "axis=x,has_carpet=true,position=0,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=x,has_carpet=true,position=0,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=x,has_carpet=true,position=1,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_right"
+      "model": "kaleidoscopecookery:table/warped_right"
     },
     "axis=x,has_carpet=true,position=1,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_right"
+      "model": "kaleidoscopecookery:table/warped_right"
     },
     "axis=x,has_carpet=true,position=2,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_middle"
+      "model": "kaleidoscopecookery:table/warped_middle"
     },
     "axis=x,has_carpet=true,position=2,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_middle"
+      "model": "kaleidoscopecookery:table/warped_middle"
     },
     "axis=x,has_carpet=true,position=3,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_left"
+      "model": "kaleidoscopecookery:table/warped_left"
     },
     "axis=x,has_carpet=true,position=3,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_left"
+      "model": "kaleidoscopecookery:table/warped_left"
     },
     "axis=z,has_carpet=false,position=0,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=z,has_carpet=false,position=0,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=z,has_carpet=false,position=1,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_right_rot"
+      "model": "kaleidoscopecookery:table/warped_right_rot"
     },
     "axis=z,has_carpet=false,position=1,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_right_rot"
+      "model": "kaleidoscopecookery:table/warped_right_rot"
     },
     "axis=z,has_carpet=false,position=2,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_middle_rot"
+      "model": "kaleidoscopecookery:table/warped_middle_rot"
     },
     "axis=z,has_carpet=false,position=2,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_middle_rot"
+      "model": "kaleidoscopecookery:table/warped_middle_rot"
     },
     "axis=z,has_carpet=false,position=3,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_left_rot"
+      "model": "kaleidoscopecookery:table/warped_left_rot"
     },
     "axis=z,has_carpet=false,position=3,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_left_rot"
+      "model": "kaleidoscopecookery:table/warped_left_rot"
     },
     "axis=z,has_carpet=true,position=0,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=z,has_carpet=true,position=0,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_single"
+      "model": "kaleidoscopecookery:table/warped_single"
     },
     "axis=z,has_carpet=true,position=1,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_right_rot"
+      "model": "kaleidoscopecookery:table/warped_right_rot"
     },
     "axis=z,has_carpet=true,position=1,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_right_rot"
+      "model": "kaleidoscopecookery:table/warped_right_rot"
     },
     "axis=z,has_carpet=true,position=2,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_middle_rot"
+      "model": "kaleidoscopecookery:table/warped_middle_rot"
     },
     "axis=z,has_carpet=true,position=2,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_middle_rot"
+      "model": "kaleidoscopecookery:table/warped_middle_rot"
     },
     "axis=z,has_carpet=true,position=3,waterlogged=false": {
-      "model": "kaleidoscope_cookery:table/warped_left_rot"
+      "model": "kaleidoscopecookery:table/warped_left_rot"
     },
     "axis=z,has_carpet=true,position=3,waterlogged=true": {
-      "model": "kaleidoscope_cookery:table/warped_left_rot"
+      "model": "kaleidoscopecookery:table/warped_left_rot"
     }
   }
 }

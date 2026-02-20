@@ -1,6 +1,6 @@
 {
-  "parent": "kaleidoscope_cookery:blocks/table/right",
+  "parent": "kaleidoscopecookery:blocks/table/right",
   "textures": {
-    "particle": "kaleidoscope_cookery:blocks/table/dark_oak"
+    "particle": "kaleidoscopecookery:blocks/table/dark_oak"
   }
 }

@@ -1,28 +1,28 @@
 {
   "variants": {
     "age=0": {
-      "model": "kaleidoscope_cookery:crop/chili/stage0"
+      "model": "kaleidoscopecookery:crop/chili/stage0"
     },
     "age=1": {
-      "model": "kaleidoscope_cookery:crop/chili/stage1"
+      "model": "kaleidoscopecookery:crop/chili/stage1"
     },
     "age=2": {
-      "model": "kaleidoscope_cookery:crop/chili/stage2"
+      "model": "kaleidoscopecookery:crop/chili/stage2"
     },
     "age=3": {
-      "model": "kaleidoscope_cookery:crop/chili/stage3"
+      "model": "kaleidoscopecookery:crop/chili/stage3"
     },
     "age=4": {
-      "model": "kaleidoscope_cookery:crop/chili/stage4"
+      "model": "kaleidoscopecookery:crop/chili/stage4"
     },
     "age=5": {
-      "model": "kaleidoscope_cookery:crop/chili/stage5"
+      "model": "kaleidoscopecookery:crop/chili/stage5"
     },
     "age=6": {
-      "model": "kaleidoscope_cookery:crop/chili/stage6"
+      "model": "kaleidoscopecookery:crop/chili/stage6"
     },
     "age=7": {
-      "model": "kaleidoscope_cookery:crop/chili/stage7"
+      "model": "kaleidoscopecookery:crop/chili/stage7"
     }
   }
 }

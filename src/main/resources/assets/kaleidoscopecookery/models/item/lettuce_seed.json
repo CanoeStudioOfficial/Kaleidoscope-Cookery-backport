@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/lettuce_seed"
+    "layer0": "kaleidoscopecookery:item/lettuce_seed"
   }
 }

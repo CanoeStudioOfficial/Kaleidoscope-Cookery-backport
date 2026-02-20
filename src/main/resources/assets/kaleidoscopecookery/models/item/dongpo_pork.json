@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/dongpo_pork"
+    "layer0": "kaleidoscopecookery:item/dongpo_pork"
   }
 }

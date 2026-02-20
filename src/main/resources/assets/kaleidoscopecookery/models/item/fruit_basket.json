@@ -1,6 +1,6 @@
 {
   "base": {
-    "parent": "kaleidoscope_cookery:item/fruit_basket_full"
+    "parent": "kaleidoscopecookery:item/fruit_basket_full"
   },
   "gui_light": "front",
   "loader": "forge:separate_transforms",
@@ -8,19 +8,19 @@
     "fixed": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "kaleidoscope_cookery:item/fruit_basket"
+        "layer0": "kaleidoscopecookery:item/fruit_basket"
       }
     },
     "ground": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "kaleidoscope_cookery:item/fruit_basket"
+        "layer0": "kaleidoscopecookery:item/fruit_basket"
       }
     },
     "gui": {
       "parent": "minecraft:item/generated",
       "textures": {
-        "layer0": "kaleidoscope_cookery:item/fruit_basket"
+        "layer0": "kaleidoscopecookery:item/fruit_basket"
       }
     }
   }

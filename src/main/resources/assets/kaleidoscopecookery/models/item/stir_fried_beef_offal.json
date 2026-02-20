@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscope_cookery:item/stir_fried_beef_offal"
+    "layer0": "kaleidoscopecookery:item/stir_fried_beef_offal"
   }
 }

@@ -2,6 +2,6 @@
   "parent": "minecraft:blocks/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "kaleidoscope_cookery:blocks/crop/rice/stage4_up"
+    "cross": "kaleidoscopecookery:blocks/crop/rice/stage4_up"
   }
 }

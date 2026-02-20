@@ -1,10 +1,10 @@
 {
   "parent": "block/block",
   "textures": {
-    "particle": "kaleidoscope_cookery:blocks/pot_side",
-    "side": "kaleidoscope_cookery:blocks/pot_side",
-    "bottom": "kaleidoscope_cookery:blocks/pot_bottom",
-    "top": "kaleidoscope_cookery:blocks/pot_top"
+    "particle": "kaleidoscopecookery:blocks/pot_side",
+    "side": "kaleidoscopecookery:blocks/pot_side",
+    "bottom": "kaleidoscopecookery:blocks/pot_bottom",
+    "top": "kaleidoscopecookery:blocks/pot_top"
   },
   "elements": [
     {
