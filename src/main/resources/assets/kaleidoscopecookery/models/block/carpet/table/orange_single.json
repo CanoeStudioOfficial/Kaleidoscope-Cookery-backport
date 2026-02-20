@@ -1,6 +1,0 @@
-{
-  "parent": "kaleidoscopecookery:block/carpet/table/single",
-  "textures": {
-    "particle": "kaleidoscopecookery:block/carpet/table/orange"
-  }
-}

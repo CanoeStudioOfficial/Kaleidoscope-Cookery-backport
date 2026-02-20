@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "kaleidoscopecookery:block/straw_block_end",
-    "side": "kaleidoscopecookery:block/straw_block_side"
-  }
-}

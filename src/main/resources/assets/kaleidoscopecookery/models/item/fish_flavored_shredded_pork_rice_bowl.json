@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kaleidoscopecookery:item/fish_flavored_shredded_pork_rice_bowl"
-  }
-}

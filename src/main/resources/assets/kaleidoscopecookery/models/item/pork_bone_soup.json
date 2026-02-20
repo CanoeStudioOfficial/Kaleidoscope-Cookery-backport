@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kaleidoscopecookery:item/pork_bone_soup"
-  }
-}

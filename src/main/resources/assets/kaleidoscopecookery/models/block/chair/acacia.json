@@ -1,6 +1,0 @@
-{
-  "parent": "kaleidoscopecookery:block/chair/chair",
-  "textures": {
-    "particle": "kaleidoscopecookery:block/chair/acacia"
-  }
-}

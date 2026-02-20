@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kaleidoscopecookery:item/sweet_and_sour_pork_rice_bowl"
-  }
-}
