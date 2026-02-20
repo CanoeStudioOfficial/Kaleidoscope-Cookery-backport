@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=east,lit=false": {
-      "model": "kaleidoscopecookery:block/block/stove",
+      "model": "kaleidoscopecookery:block/stove",
       "y": 90
     },
     "facing=east,lit=true": {
-      "model": "kaleidoscopecookery:block/block/stove_lit",
+      "model": "kaleidoscopecookery:block/stove_lit",
       "y": 90
     },
     "facing=north,lit=false": {
-      "model": "kaleidoscopecookery:block/block/stove"
+      "model": "kaleidoscopecookery:block/stove"
     },
     "facing=north,lit=true": {
-      "model": "kaleidoscopecookery:block/block/stove_lit"
+      "model": "kaleidoscopecookery:block/stove_lit"
     },
     "facing=south,lit=false": {
-      "model": "kaleidoscopecookery:block/block/stove",
+      "model": "kaleidoscopecookery:block/stove",
       "y": 180
     },
     "facing=south,lit=true": {
-      "model": "kaleidoscopecookery:block/block/stove_lit",
+      "model": "kaleidoscopecookery:block/stove_lit",
       "y": 180
     },
     "facing=west,lit=false": {
-      "model": "kaleidoscopecookery:block/block/stove",
+      "model": "kaleidoscopecookery:block/stove",
       "y": 270
     },
     "facing=west,lit=true": {
-      "model": "kaleidoscopecookery:block/block/stove_lit",
+      "model": "kaleidoscopecookery:block/stove_lit",
       "y": 270
     }
   }

@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=east,waterlogged=false": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 90
     },
     "facing=east,waterlogged=true": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 90
     },
     "facing=north,waterlogged=false": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket"
+      "model": "kaleidoscopecookery:block/fruit_basket"
     },
     "facing=north,waterlogged=true": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket"
+      "model": "kaleidoscopecookery:block/fruit_basket"
     },
     "facing=south,waterlogged=false": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 180
     },
     "facing=south,waterlogged=true": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 180
     },
     "facing=west,waterlogged=false": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 270
     },
     "facing=west,waterlogged=true": {
-      "model": "kaleidoscopecookery:block/block/fruit_basket",
+      "model": "kaleidoscopecookery:block/fruit_basket",
       "y": 270
     }
   }
