@@ -34,7 +34,7 @@ public class ModBlocks {
 
     public static final CreativeTabs CREATIVE_TAB = new CreativeTabs(KaleidoscopeCookery.MOD_ID) {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ModItems.STOVE);
         }
     };

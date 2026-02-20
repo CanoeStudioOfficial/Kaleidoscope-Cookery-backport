@@ -3,7 +3,6 @@ package com.github.ysbbbbbb.kaleidoscopecookery.block;
 import com.github.ysbbbbbb.kaleidoscopecookery.KaleidoscopeCookery;
 import com.github.ysbbbbbb.kaleidoscopecookery.init.ModBlocks;
 import com.github.ysbbbbbb.kaleidoscopecookery.tileentity.TileEntityPot;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -12,12 +11,10 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -31,7 +28,6 @@ public class BlockPot extends BlockHorizontal {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool HAS_OIL = PropertyBool.create("has_oil");
     public static final PropertyBool SHOW_OIL = PropertyBool.create("show_oil");
-    public static final PropertyBool HAS_BASE = PropertyBool.create("has_base");
 
     public BlockPot() {
         super(Material.IRON);
@@ -41,8 +37,7 @@ public class BlockPot extends BlockHorizontal {
         this.setDefaultState(this.blockState.getBaseState()
                 .withProperty(FACING, EnumFacing.NORTH)
                 .withProperty(HAS_OIL, false)
-                .withProperty(SHOW_OIL, false)
-                .withProperty(HAS_BASE, false));
+                .withProperty(SHOW_OIL, false));
     }
 
     @Override
@@ -60,9 +55,11 @@ public class BlockPot extends BlockHorizontal {
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
         IBlockState state = this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
         
-        IBlockState belowState = world.getBlockState(pos.down());
-        if (!belowState.isSideSolid(world, pos.down(), EnumFacing.UP)) {
-            state = state.withProperty(HAS_BASE, true);
+        TileEntity tileEntity = world.getTileEntity(pos);
+        if (tileEntity instanceof TileEntityPot) {
+            IBlockState belowState = world.getBlockState(pos.down());
+            boolean needsBase = !belowState.isSideSolid(world, pos.down(), EnumFacing.UP);
+            ((TileEntityPot) tileEntity).setHasBase(needsBase);
         }
         
         return state;
@@ -110,12 +107,10 @@ public class BlockPot extends BlockHorizontal {
         EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         boolean hasOil = (meta & 4) != 0;
         boolean showOil = (meta & 8) != 0;
-        boolean hasBase = (meta & 16) != 0;
         return this.getDefaultState()
                 .withProperty(FACING, facing)
                 .withProperty(HAS_OIL, hasOil)
-                .withProperty(SHOW_OIL, showOil)
-                .withProperty(HAS_BASE, hasBase);
+                .withProperty(SHOW_OIL, showOil);
     }
 
     @Override
@@ -123,13 +118,12 @@ public class BlockPot extends BlockHorizontal {
         int meta = state.getValue(FACING).getHorizontalIndex();
         if (state.getValue(HAS_OIL)) meta |= 4;
         if (state.getValue(SHOW_OIL)) meta |= 8;
-        if (state.getValue(HAS_BASE)) meta |= 16;
         return meta;
     }
 
     @Override
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, FACING, HAS_OIL, SHOW_OIL, HAS_BASE);
+        return new BlockStateContainer(this, FACING, HAS_OIL, SHOW_OIL);
     }
 
     @Override
@@ -153,6 +147,7 @@ public class BlockPot extends BlockHorizontal {
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, World player, List<String> tooltip, net.minecraft.client.util.ITooltipFlag advanced) {
         tooltip.add(net.minecraft.client.resources.I18n.format("tooltip.kaleidoscopecookery.pot"));
     }
