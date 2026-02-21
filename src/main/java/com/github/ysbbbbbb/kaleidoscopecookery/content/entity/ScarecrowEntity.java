@@ -12,6 +12,7 @@ import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.passive.EntityParrot;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -76,7 +77,7 @@ public class ScarecrowEntity extends EntityLiving {
     @Override
     public EnumActionResult applyPlayerInteraction(EntityPlayer player, Vec3d vec, EnumHand hand) {
         ItemStack itemInHand = player.getHeldItem(hand);
-        if (itemInHand.getItem() == Item.getItemFromBlock(Blocks.NAME_TAG)) {
+        if (itemInHand.getItem() == Items.NAME_TAG) {
             return EnumActionResult.PASS;
         }
         if (player.isSpectator()) {
@@ -120,20 +121,20 @@ public class ScarecrowEntity extends EntityLiving {
 
         if (player.capabilities.isCreativeMode && headItem.isEmpty()) {
             this.setItemStackToSlot(EntityEquipmentSlot.HEAD, new ItemStack(itemInHand.getItem(), 1, itemInHand.getMetadata()));
-            this.world.playSound(null, this.getPosition(), SoundEvents.ITEM_FRAME_ADD_ITEM, this.getSoundCategory(), 1.0F, 1.0F);
+            this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_WOOD_PLACE, this.getSoundCategory(), 1.0F, 1.0F);
             return EnumActionResult.SUCCESS;
         }
         if (!itemInHand.isEmpty() && itemInHand.getCount() > 1) {
             if (headItem.isEmpty()) {
                 ItemStack copyStack = itemInHand.splitStack(1);
                 this.setItemStackToSlot(EntityEquipmentSlot.HEAD, copyStack);
-                this.world.playSound(null, this.getPosition(), SoundEvents.ITEM_FRAME_ADD_ITEM, this.getSoundCategory(), 1.0F, 1.0F);
+                this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_WOOD_PLACE, this.getSoundCategory(), 1.0F, 1.0F);
                 return EnumActionResult.SUCCESS;
             }
             return EnumActionResult.PASS;
         }
         this.setItemStackToSlot(EntityEquipmentSlot.HEAD, itemInHand);
-        this.world.playSound(null, this.getPosition(), SoundEvents.ITEM_FRAME_ADD_ITEM, this.getSoundCategory(), 1.0F, 1.0F);
+        this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_WOOD_PLACE, this.getSoundCategory(), 1.0F, 1.0F);
         player.setHeldItem(EnumHand.MAIN_HAND, headItem);
         return EnumActionResult.SUCCESS;
     }
@@ -157,13 +158,13 @@ public class ScarecrowEntity extends EntityLiving {
         }
         if (itemInHand.getItem().isDamageable()) {
             if (swapHand(EnumHand.MAIN_HAND, player, itemInHand)) {
-                this.world.playSound(null, this.getPosition(), SoundEvents.ITEM_FRAME_ADD_ITEM, this.getSoundCategory(), 1.0F, 1.0F);
+                this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_WOOD_PLACE, this.getSoundCategory(), 1.0F, 1.0F);
                 return EnumActionResult.SUCCESS;
             }
         }
         if (itemInHand.getItem() instanceof ItemBlock) {
             if (swapHand(EnumHand.OFF_HAND, player, itemInHand)) {
-                this.world.playSound(null, this.getPosition(), SoundEvents.ITEM_FRAME_ADD_ITEM, this.getSoundCategory(), 1.0F, 1.0F);
+                this.world.playSound(null, this.getPosition(), SoundEvents.BLOCK_WOOD_PLACE, this.getSoundCategory(), 1.0F, 1.0F);
                 return EnumActionResult.SUCCESS;
             }
         }
@@ -234,10 +235,10 @@ public class ScarecrowEntity extends EntityLiving {
 
         long gameTime = this.world.getTotalWorldTime();
         if (gameTime - this.lastHit > 5) {
-            this.world.playSound(null, this.getPosition(), SoundEvents.ENTITY_ARMOR_STAND_HIT, this.getSoundCategory(), 0.3F, 1.0F);
+            this.world.playSound(null, this.getPosition(), SoundEvents.ENTITY_PLAYER_HURT, this.getSoundCategory(), 0.3F, 1.0F);
             this.world.setEntityState(this, (byte) 32);
             this.lastHit = gameTime;
-            if (!this.getShoulderEntity().hasNoTags()) {
+            if (!this.getShoulderEntity().isEmpty()) {
                 this.removeEntitiesOnShoulder();
             }
         } else {
@@ -281,7 +282,7 @@ public class ScarecrowEntity extends EntityLiving {
     }
 
     private void playBrokenSound() {
-        this.world.playSound(null, this.getPosition(), SoundEvents.ENTITY_ARMOR_STAND_BREAK, this.getSoundCategory(), 1.0F, 1.0F);
+        this.world.playSound(null, this.getPosition(), SoundEvents.ENTITY_PLAYER_DEATH, this.getSoundCategory(), 1.0F, 1.0F);
     }
 
     private void showBreakingParticles() {
@@ -315,7 +316,7 @@ public class ScarecrowEntity extends EntityLiving {
     }
 
     private void respawnEntityOnShoulder(NBTTagCompound tag) {
-        if (!this.world.isRemote && !tag.hasNoTags()) {
+        if (!this.world.isRemote && !tag.isEmpty()) {
             Entity entity = EntityList.createEntityFromNBT(tag, this.world);
             if (entity != null) {
                 entity.setPosition(this.posX, this.posY + 1.675, this.posZ);
@@ -327,7 +328,7 @@ public class ScarecrowEntity extends EntityLiving {
     @Override
     public void writeEntityToNBT(NBTTagCompound compound) {
         super.writeEntityToNBT(compound);
-        if (!this.getShoulderEntity().hasNoTags()) {
+        if (!this.getShoulderEntity().isEmpty()) {
             compound.setTag("ShoulderEntity", this.getShoulderEntity());
         }
     }
@@ -396,7 +397,7 @@ public class ScarecrowEntity extends EntityLiving {
     }
 
     private boolean canEntityOnShoulder() {
-        return !this.isRiding() && this.onGround && !this.isInWater() && !this.isInLava() && this.getShoulderEntity().hasNoTags();
+        return !this.isRiding() && this.onGround && !this.isInWater() && !this.isInLava() && this.getShoulderEntity().isEmpty();
     }
 
     @Override
@@ -418,9 +419,9 @@ public class ScarecrowEntity extends EntityLiving {
     public ItemStack getItemStackFromSlot(EntityEquipmentSlot slotIn) {
         switch (slotIn.getSlotType()) {
             case HAND:
-                return this.handItems.get(slotIn.getIndex());
+                return super.getItemStackFromSlot(slotIn);
             case ARMOR:
-                return this.armorArray.get(slotIn.getIndex());
+                return super.getItemStackFromSlot(slotIn);
             default:
                 return ItemStack.EMPTY;
         }
@@ -428,14 +429,7 @@ public class ScarecrowEntity extends EntityLiving {
 
     @Override
     public void setItemStackToSlot(EntityEquipmentSlot slotIn, ItemStack stack) {
-        switch (slotIn.getSlotType()) {
-            case HAND:
-                this.handItems.set(slotIn.getIndex(), stack);
-                break;
-            case ARMOR:
-                this.armorArray.set(slotIn.getIndex(), stack);
-                break;
-        }
+        super.setItemStackToSlot(slotIn, stack);
     }
 
     @Override
@@ -451,13 +445,13 @@ public class ScarecrowEntity extends EntityLiving {
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.ENTITY_ARMOR_STAND_HIT;
+        return SoundEvents.ENTITY_PLAYER_HURT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_ARMOR_STAND_BREAK;
+        return SoundEvents.ENTITY_PLAYER_DEATH;
     }
 
     @Override

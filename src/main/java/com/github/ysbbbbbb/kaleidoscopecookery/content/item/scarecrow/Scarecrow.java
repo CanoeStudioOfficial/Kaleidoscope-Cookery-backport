@@ -47,7 +47,7 @@ public class Scarecrow extends Item {
 
         AxisAlignedBB aabb = new AxisAlignedBB(x - 0.25, y, z - 0.25, x + 0.25, y + 2.375, z + 0.25);
 
-        if (worldIn.checkNoEntityCollision(null, aabb) && worldIn.getEntitiesWithinAABBExcludingEntity(null, aabb).isEmpty()) {
+        if (worldIn.getEntitiesWithinAABBExcludingEntity(null, aabb).isEmpty()) {
             if (!worldIn.isRemote) {
                 ScarecrowEntity scarecrow = new ScarecrowEntity(worldIn, x, y, z);
                 float rotation = MathHelper.floor((MathHelper.wrapDegrees(player.rotationYaw - 180.0F) + 22.5F) / 45.0F) * 45.0F;
@@ -63,7 +63,7 @@ public class Scarecrow extends Item {
                 }
 
                 worldIn.spawnEntity(scarecrow);
-                worldIn.playSound(null, scarecrow.posX, scarecrow.posY, scarecrow.posZ, SoundEvents.ENTITY_ARMOR_STAND_PLACE, SoundCategory.BLOCKS, 0.75F, 0.8F);
+                worldIn.playSound(null, scarecrow.posX, scarecrow.posY, scarecrow.posZ, SoundEvents.BLOCK_WOOD_PLACE, SoundCategory.BLOCKS, 0.75F, 0.8F);
 
                 if (player instanceof EntityPlayerMP) {
                     CriteriaTriggers.SUMMONED_ENTITY.trigger((EntityPlayerMP) player, scarecrow);

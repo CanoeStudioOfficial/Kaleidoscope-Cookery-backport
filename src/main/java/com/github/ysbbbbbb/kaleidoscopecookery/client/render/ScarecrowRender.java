@@ -20,7 +20,7 @@ public class ScarecrowRender extends RenderLiving<ScarecrowEntity> {
         super(renderManagerIn, new ScarecrowModel(), 0.0F);
         this.addLayer(new LayerCustomHead(this.getMainModel().getHead()));
         this.addLayer(new ScarecrowHandLayer(this));
-        this.addLayer(new ScarecrowParrotOnShoulderLayer(this));
+        this.addLayer(new ScarecrowParrotOnShoulderLayer());
     }
 
     @Override

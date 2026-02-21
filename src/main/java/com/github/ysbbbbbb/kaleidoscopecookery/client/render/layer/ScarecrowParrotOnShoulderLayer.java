@@ -20,12 +20,12 @@ public class ScarecrowParrotOnShoulderLayer implements LayerRenderer<ScarecrowEn
     @Override
     public void doRenderLayer(ScarecrowEntity scarecrow, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
         NBTTagCompound tag = scarecrow.getShoulderEntity();
-        if (tag.hasNoTags()) {
+        if (tag.isEmpty()) {
             return;
         }
 
         String entityId = tag.getString("id");
-        if (!entityId.equals("minecraft:parrot")) {
+        if (!entityId.equals("minecraft:parrot") && !entityId.equals("parrot")) {
             return;
         }
 
@@ -33,14 +33,17 @@ public class ScarecrowParrotOnShoulderLayer implements LayerRenderer<ScarecrowEn
         GlStateManager.translate(0.625F, -1.675F, 0.0625F);
 
         int variant = tag.getInteger("Variant");
-        EntityParrot.Variant parrotVariant = EntityParrot.Variant.getVariant(variant);
-        ResourceLocation texture = RenderParrot.PARROT_TEXTURES[parrotVariant.getIndex()];
+        ResourceLocation texture = getParrotTexture(variant);
 
-        this.model.render(scarecrow, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale);
         Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
         this.model.render(scarecrow, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale);
 
         GlStateManager.popMatrix();
+    }
+
+    private ResourceLocation getParrotTexture(int variant) {
+        int index = variant % 5;
+        return RenderParrot.PARROT_TEXTURES[index];
     }
 
     @Override
