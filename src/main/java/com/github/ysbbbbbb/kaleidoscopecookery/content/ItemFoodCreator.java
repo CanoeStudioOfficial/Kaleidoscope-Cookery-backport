@@ -1,12 +1,24 @@
 package com.github.ysbbbbbb.kaleidoscopecookery.content;
 
-import net.minecraft.item.Item;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.github.ysbbbbbb.kaleidoscopecookery.KaleidoscopeCookery;
+import com.github.ysbbbbbb.kaleidoscopecookery.content.item.ModItems;
+import net.minecraft.item.ItemFood;
 
-public class ItemFoodCreator {
-    public static final List<Item> ITEMS = new ArrayList<>();
+import static com.github.ysbbbbbb.kaleidoscopecookery.content.tab.CreativeTab.CREATIVE_TABS;
+
+
+public class ItemFoodCreator extends ItemFood  {
+    public ItemFoodCreator(String name, int hunger, float saturationModifier)
+    {
+        super(hunger, saturationModifier, false);
+        setTranslationKey(KaleidoscopeCookery.MOD_ID + "." + name.toLowerCase());
+        setRegistryName(name.toLowerCase());
+        setNoRepair();
+        setCreativeTab(CREATIVE_TABS);
+
+        ModItems.ITEMS.add(this);
+    }
 
 
 }
